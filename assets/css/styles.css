@@ -1,37 +1,20 @@
-/* #container-main {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: auto 1fr 2rem;
-    grid-auto-rows: auto;
-    min-height: 100vh;
-}
-
-header {
-    grid-area: 1 / 1 / span 1 / span 12;
-}
-
-main {
-    grid-area: 2 / 1 / span 1 / span 12;
-}
-
-footer {
-    grid-area: 3 / 1 / span 1 / span 12;
-} */
-
 body, html {
 	height: 100%;
 	margin: 0;
 	padding: 0.5rem;
 	background-image: url('/assets/images/our-guy-bkg.jpg');
 	background-position: center;
+	background-size: contain;
 	font-size: 1.25rem;
 	font-family: 'Lora' serif;
 	color: yellow;
 }
 
 h1 {
-    font-size: 4.5rem;
-    margin: 1rem 0.5rem;
+    font-size: 2.2rem;
+    padding: 0.5rem;
+	margin-top: 0;
+	margin-bottom: 1rem;
 	background-color: #370bc3;
 	color: yellow;
 	font-style: italic;
@@ -53,10 +36,10 @@ h1 span {
 
 #button-list button {
 	margin: 1rem 0;
-	padding: 1.5rem 1rem;
+	padding: 0.5rem 1rem;
 	background-color: transparent;
 	border: 1px solid yellow;
-	font-size: 2rem;
+	font-size: 1.25rem;
 	color: yellow;
 	font-family: Lora serif;
 	transition: all 0.1s linear;
@@ -74,4 +57,11 @@ h1 span {
 footer p {
 	text-align: center;
 	padding: 2rem;
+}
+
+@media only screen and (min-width: 590px) {
+	#button-list {
+		max-width: 50%;
+		margin: auto;
+	}
 }
