@@ -64,4 +64,9 @@ footer p {
 		max-width: 50%;
 		margin: auto;
 	}
+
+	#button-list button {
+		font-size: 1.25rem;
+		margin: 0.75rem;
+	}
 }
